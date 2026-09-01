@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The five ways skills fail - SkillUp</title>
+<meta name="description" content="Symptom, cause, fix. The page to come back to when something's wrong.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link is-active" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Level 200 / Authoring</p>
+      <h1>The five ways skills fail</h1>
+      <p class="lede">Almost every broken skill is one of these five. Find your symptom, jump to the fix.</p>
+      <h2>1. It never fires</h2>
+<p><strong>Symptom:</strong> You ask for the thing. The agent answers like the skill doesn&#39;t exist. You check, it&#39;s definitely installed.</p>
+<p><strong>Cause:</strong> The description doesn&#39;t contain language close to what you typed. Nine times out of ten this is it. The body is irrelevant here, because it never got read.</p>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Write down five ways a real person would ask for this. Put those nouns and verbs in the description.</li>
+<li>Add an explicit &quot;Use when...&quot; clause if there isn&#39;t one.</li>
+<li>Check the description isn&#39;t just restating the name.</li>
+<li>Test with the exact phrasing you&#39;d naturally use, not the phrasing you invented while writing the skill.</li>
+</ul>
+<div class="note bad">
+<p class="eyebrow">The trap</p>
+<p>You wrote the skill, so you ask for it in the skill's own vocabulary and it fires perfectly. Then a coworker asks in normal words and nothing happens. Always test with somebody else's phrasing.</p>
+</div>
+
+<h2>2. It fires constantly</h2>
+<p><strong>Symptom:</strong> The vinyl grading skill turns up in a conversation about the espresso machine. Everything gets graded.</p>
+<p><strong>Cause:</strong> The description is too abstract. &quot;Helps assess items&quot; matches almost any request.</p>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Replace abstract nouns with concrete ones. &quot;Items&quot; becomes &quot;vinyl records, LPs, 45s, sleeves.&quot;</li>
+<li>Add a boundary to the description: what it&#39;s for, and implicitly what it isn&#39;t.</li>
+<li>Add a &quot;Do not use this for...&quot; line to the <strong>When to use this</strong> section of the body.</li>
+</ul>
+<h2>3. It fires, then ignores half the instructions</h2>
+<p><strong>Symptom:</strong> Right skill, wrong output. It grades the record but merges disc and sleeve into one number, which the skill explicitly says not to do.</p>
+<p><strong>Cause:</strong> Usually one of three things. The instruction is buried in prose. The instruction is stated as a preference rather than a rule. Or the body is long enough that the important part is competing with filler.</p>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Move the critical rule into the <strong>Output format</strong> section and show it, don&#39;t say it.</li>
+<li>Cut the filler. Every sentence that doesn&#39;t change the output is diluting the ones that do.</li>
+<li>Convert &quot;should generally&quot; into &quot;always&quot; or &quot;never.&quot;</li>
+<li>If it still drifts, add a labeled counterexample.</li>
+</ul>
+<h2>4. Two skills fight</h2>
+<p><strong>Symptom:</strong> Sometimes you get the grading skill, sometimes the pricing skill, for the same question. Feels random because it is.</p>
+<p><strong>Cause:</strong> Overlapping descriptions. Both claim the same territory.</p>
+<p><strong>Fix:</strong> Make the scopes disjoint, and have each description name the other&#39;s boundary.</p>
+<div class="pair">
+<div class="no">
+<p class="eyebrow">Fighting</p>
+<p><code>vinyl-condition-grading</code>: "Assess used records."<br><code>used-record-pricing</code>: "Price used records."</p>
+</div>
+<div class="yes">
+<p class="eyebrow">Separated</p>
+<p><code>vinyl-condition-grading</code>: "...assign a condition grade. Use before pricing, when the grade isn't known yet."<br><code>used-record-pricing</code>: "...set a shelf price from a known grade and recent comps. Use when the grade is already established."</p>
+</div>
+</div>
+
+<p>If they genuinely can&#39;t be separated, they&#39;re one skill.</p>
+<h2>5. It works in preview and dies in production</h2>
+<p><strong>Symptom:</strong> Perfect in the test pane. Wrong for everybody else.</p>
+<p><strong>Causes, in order of likelihood:</strong></p>
+<ul>
+<li><strong>Permissions.</strong> Especially in SharePoint, where a skill can only do what the <em>running user</em> is already allowed to do. Your test worked because you&#39;re a site owner.</li>
+<li><strong>Missing tools.</strong> The skill assumes a connector the production agent doesn&#39;t have.</li>
+<li><strong>Different skill set.</strong> Production has thirty other skills competing. Yours was unopposed in your test environment.</li>
+<li><strong>Phrasing again.</strong> You tested with your words. Real users use theirs.</li>
+</ul>
+<p><strong>Fix:</strong> Test as a normal user, in the real agent, with the real skill set installed, using somebody else&#39;s phrasing. Every one of those four words is doing work.</p>
+<h2>The triage order</h2>
+<div class="stack-rows">
+<div class="stack-row"><b>First</b><p>Did it fire at all? If no, it's the description. Stop looking at the body.</p></div>
+<div class="stack-row"><b>Second</b><p>Did it fire when it shouldn't? Also the description, in the other direction.</p></div>
+<div class="stack-row"><b>Third</b><p>Did it fire and misbehave? Now it's the body, and usually the output format section.</p></div>
+<div class="stack-row"><b>Fourth</b><p>Is it inconsistent across people? Permissions, tools, or a competing skill.</p></div>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/200-authoring/examples.html"><span class="eyebrow">Previous</span><span>Show, don't tell</span></a><a class="pagenav-item next" href="/skillup/200-authoring/rewrites.html"><span class="eyebrow">Next</span><span>Before and after</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

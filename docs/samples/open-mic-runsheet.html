@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>open-mic-runsheet - SkillUp</title>
+<meta name="description" content="Tribal knowledge written down, with a bundled template doing the formatting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link is-active" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Sample 03 / Capturing what one person knows</p>
+      <h1>open-mic-runsheet</h1>
+      <p class="lede">The ordering rules in this file existed nowhere except in two people's heads. That's the entire reason it's worth building.</p>
+      <div class="chips"><span class="chip">SharePoint</span><span class="chip">1 list</span><span class="chip">bundled template</span><span class="chip">~50 lines</span></div>
+
+<p><button class="mini" data-load-skill="open-mic-runsheet">Open this in the Skill Forge</button></p>
+
+<h2>The file</h2>
+<pre><code class="language-markdown">---
+name: open-mic-runsheet
+description: Build the Thursday open mic run of show from the sign-up list, including set order and sound check times. Use when someone asks about the open mic lineup, running order, who is playing when, the wait list, or the Thursday night schedule.
+---
+
+# Open mic run sheet
+
+## When to use this
+Sign-ups have closed for a Thursday night and the run of show needs
+building. Also use when someone asks who is on the wait list or why.
+
+## Ordering rules
+These are the house rules and they are not negotiable.
+
+1. Never put a first-timer in slot 1. Slots 3 and 4 are the first-timer
+   slots. They get a warm room and an easy exit.
+2. Full bands go last. Teardown stalls the night otherwise.
+3. Anyone bumped from the previous week is slotted before new sign-ups,
+   regardless of when they signed up.
+4. Nobody plays two weeks running if it means bumping someone who did not
+   play last week.
+5. Solo sets are 12 minutes. Full bands get 20.
+
+## Steps
+1. Read the sign-up list for the date.
+2. Separate first-timers, returning regulars, and full bands.
+3. Apply the ordering rules to fill 11 slots.
+4. Everyone who does not fit goes on the wait list, in sign-up order,
+   with anyone bumped last week marked for automatic slotting next week.
+5. Allocate sound check: 5 minutes per solo act, 20 minutes for a band,
+   working backward from doors at 7:30.
+
+## Output format
+Use `templates/runsheet.md` exactly. Do not reformat the table.
+
+After the table, always include:
+- **Wait list:** names, in order
+- **Wait list rule:** who gets automatic slotting next week and why
+- **Sound check:** the window, and any act needing more than 5 minutes
+
+## Rules
+- Mark first-timers in the Notes column as FIRST TIME, in caps.
+- If the sign-up list has more than 15 names, say so before building.
+  That is a busy night and the owner wants to know.
+- Never drop somebody from the wait list silently. If they were bumped,
+  the run sheet has to say so.
+</code></pre>
+<h2>What makes this work</h2>
+<h3>The rules are the deliverable</h3>
+<p>Five ordering rules, and not one of them is obvious:</p>
+<ol>
+<li>First-timers never go first, they go third or fourth</li>
+<li>Full bands go last so teardown doesn&#39;t stall the night</li>
+<li>Bumped-last-week beats signed-up-earlier</li>
+<li>Nobody plays two weeks running at somebody else&#39;s expense</li>
+<li>Solo 12 minutes, band 20</li>
+</ol>
+<p>Every one of those is a decision somebody made years ago for a good reason. Written down, they survive that person leaving. That&#39;s the whole value proposition of this skill and it has nothing to do with AI.</p>
+<h3>The format lives in a template, not the body</h3>
+<blockquote>
+<p>Use <code>templates/runsheet.md</code> exactly. Do not reformat the table.</p>
+</blockquote>
+<p>The sound engineer owns that file. When they want a column added they edit the template, not the skill. Separating the <em>shape</em> of a document from the <em>procedure</em> that produces it means two different people can own two different things. <a href="/skillup/400-advanced/bundles.html">More on bundles.</a></p>
+<h3>It refuses to fail silently</h3>
+<blockquote>
+<p>Never drop somebody from the wait list silently. If they were bumped, the run sheet has to say so.</p>
+</blockquote>
+<p>Nobody asked for this. It came out of writing rule 3 down properly: if bumped-last-week gets priority, something has to record who got bumped. The skill ended up more considerate than the process it replaced, which happens more often than you&#39;d think.</p>
+<h3>It escalates instead of guessing</h3>
+<blockquote>
+<p>If the sign-up list has more than 15 names, say so before building. That is a busy night and the owner wants to know.</p>
+</blockquote>
+<p>A threshold plus a notification. Two lines. This is the cheapest kind of business logic to encode and one of the most useful.</p>
+<h3>The description covers five phrasings</h3>
+<p>&quot;lineup,&quot; &quot;running order,&quot; &quot;who is playing when,&quot; &quot;wait list,&quot; &quot;Thursday night schedule.&quot; Nobody says &quot;run of show&quot; except the person who wrote the skill, which is exactly the trap <a href="/skillup/200-authoring/failure-modes.html">Level 200 warns about</a>.</p>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/samples/used-record-pricing.html"><span class="eyebrow">Previous</span><span>used-record-pricing</span></a><a class="pagenav-item next" href="/skillup/samples/consignment-intake.html"><span class="eyebrow">Next</span><span>consignment-intake</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+<script src="/skillup/assets/js/sample.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M365 Copilot and SharePoint - SkillUp</title>
+<meta name="description" content="Authoring skills by talking to Copilot, where they're stored, and the limits that actually bind.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link is-active" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Level 300 / Shipping</p>
+      <h1>M365 Copilot and SharePoint</h1>
+      <p class="lede">The lowest barrier to entry in the whole stack. You describe the workflow in a chat and Copilot writes the file for you.</p>
+      <h2>Authoring by conversation</h2>
+<p>In Copilot in SharePoint you don&#39;t open a text editor. You describe the workflow and confirm the draft.</p>
+<ol>
+<li>Open the Copilot chat panel on the site.</li>
+<li>Describe the repeatable workflow you want.</li>
+<li>Copilot returns a draft skill definition.</li>
+<li>Ask for adjustments.</li>
+<li>Confirm to save.</li>
+</ol>
+<p>A real one from the shop:</p>
+<blockquote>
+<p>Create a skill to check incoming consignment paperwork. Verify each form has an artist name, a contact email, a title count, and an agreed split in the format 60/40. If any field is missing, add the form&#39;s file name to the Incomplete Consignments list.</p>
+</blockquote>
+<p>That&#39;s the whole authoring step. Marcus did this from his phone.</p>
+<h2>Where it ends up</h2>
+<pre><code>Agent Assets/
+  Skills/
+    consignment-paperwork-check/
+      SKILL.md
+</code></pre>
+<p>The <strong>Agent Assets</strong> library is created and managed by the product, and can&#39;t be deleted. The skill is a plain markdown file in there, and you can open and edit it directly if you&#39;d rather work in the file than in the chat. Keep the format intact when you do.</p>
+<div class="note brass">
+<p class="eyebrow">Why this matters more than it sounds</p>
+<p>The file is a normal SharePoint document. That means versioning, retention, sensitivity labels, and audit already apply to it, with no new governance surface to configure. Your skills inherit the governance your documents already have.</p>
+</div>
+
+<h2>Permissions</h2>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Requires</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Create or edit a skill</td>
+<td><strong>Edit</strong> permission on the site</td>
+</tr>
+<tr>
+<td>Use a skill</td>
+<td><strong>View</strong> permission on the site</td>
+</tr>
+<tr>
+<td>Restrict further</td>
+<td>Break inheritance on the Agent Assets library</td>
+</tr>
+</tbody></table>
+</div>
+
+<p>There are no separate admin controls to switch skills on or off. Standard SharePoint governance is the control surface.</p>
+<h2>What SharePoint skills can and can&#39;t do</h2>
+<div class="pair">
+<div class="yes">
+<p class="eyebrow">Can</p>
+<p>Understand and summarize content. Organize files and folders. Read and write SharePoint lists. Chain built-in Copilot capabilities into multi-step sequences.</p>
+</div>
+<div class="no">
+<p class="eyebrow">Can't</p>
+<p>Connect to external systems. Execute custom code. Do anything the running user isn't already permitted to do.</p>
+</div>
+</div>
+
+<p>That last one is the important one and it&#39;s the number one cause of &quot;works for me, broken for them.&quot;</p>
+<div class="note bad">
+<p class="eyebrow">Test as a normal user</p>
+<p>A skill runs with the permissions of whoever's using it, not whoever wrote it. If you're a site owner, your test proves almost nothing about what a member will experience. Borrow somebody's account or use a test member account, every time.</p>
+</div>
+
+<h2>When SharePoint is the right shelf</h2>
+<div class="grid grid-2">
+<div class="card">
+<h4>Good fit</h4>
+<p>The work is already in SharePoint. Documents, lists, libraries. The people who need it are already on the site. Nobody involved wants to touch a repo.</p>
+</div>
+<div class="card">
+<h4>Wrong fit</h4>
+<p>You need an external API, custom code, or a skill that follows a person across sites. That's Copilot Studio or a repo skill.</p>
+</div>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/300-shipping/copilot-studio.html"><span class="eyebrow">Previous</span><span>Copilot Studio</span></a><a class="pagenav-item next" href="/skillup/300-shipping/github-copilot.html"><span class="eyebrow">Next</span><span>GitHub Copilot and VS Code</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

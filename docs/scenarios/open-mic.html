@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open mic night - SkillUp</title>
+<meta name="description" content="Turning fifteen sign-ups into a run of show and a promo post. Two skills, one tool, two templates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link is-active" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Scenario 02</p>
+      <h1>Open mic night</h1>
+      <p class="lede">Same night, every week, and somebody rebuilds the run sheet from scratch every single time.</p>
+      <h2>The job</h2>
+<p>Thursday open mic. Sign-ups open Sunday and close Wednesday at noon. By Wednesday afternoon somebody has to produce:</p>
+<ul>
+<li>A run of show: who plays, in what order, for how long</li>
+<li>A sound check schedule for anyone bringing more than a guitar</li>
+<li>A promo post for Instagram and the shop&#39;s mailing list</li>
+</ul>
+<p>Eleven slots. Usually fifteen sign-ups. The house rules about ordering are real and nobody has written them down.</p>
+<h2>What breaks</h2>
+<div class="grid grid-2">
+<div class="card">
+<h4>The house rules live in one head</h4>
+<p>First timers go third or fourth, never first. Anyone with a full band goes last so teardown doesn't stall the night. Nobody knows this except the two people who've run it for years.</p>
+</div>
+<div class="card">
+<h4>The format changes weekly</h4>
+<p>Sometimes it's a table, sometimes a list, sometimes a paragraph. Sound engineers hate this reasonably.</p>
+</div>
+<div class="card">
+<h4>Overflow gets handled badly</h4>
+<p>Fifteen sign-ups into eleven slots. Who gets bumped, and does anybody tell them?</p>
+</div>
+<div class="card">
+<h4>The promo post is always late</h4>
+<p>Because it's the last thing and everyone's tired of the run sheet by then.</p>
+</div>
+</div>
+
+<h2>The build</h2>
+<div class="stack-rows">
+<div class="stack-row"><b>Skill</b><p><code>open-mic-runsheet</code>. Reads the sign-up list, applies the ordering rules, allocates sound check windows, handles overflow, and outputs the run sheet in one fixed format. <a href="/skillup/samples/open-mic-runsheet.html">Read the file.</a></p></div>
+<div class="stack-row"><b>Skill</b><p><code>promo-post</code>. Takes a finished run sheet and writes the Instagram caption and the mailing list blurb. Two different lengths, same facts, shop voice.</p></div>
+<div class="stack-row"><b>Tool</b><p>The sign-up list. A SharePoint list the form writes into.</p></div>
+<div class="stack-row"><b>Template</b><p><code>templates/runsheet.md</code> bundled with the skill. The exact table the sound engineer expects.</p></div>
+<div class="stack-row"><b>Template</b><p><code>templates/promo-post.md</code>. Caption structure, where the date goes, the standard closing line.</p></div>
+</div>
+
+<h3>Why each thing is what it is</h3>
+<p><strong>The ordering rules are the entire value.</strong> &quot;First timers third or fourth, bands last, nobody who played last week goes before somebody who didn&#39;t&quot; is exactly the kind of thing that lives in one person&#39;s head and leaves when they do. Writing it into a skill is the point.</p>
+<p><strong>Templates instead of prose.</strong> The run sheet is a document with a fixed shape, so <a href="/skillup/400-advanced/bundles.html">bundle the shape</a> rather than describing it. The sound engineer owns <code>templates/runsheet.md</code> and can change it without touching the skill.</p>
+<p><strong>Two skills, not one.</strong> They almost always run together, which is the trap. But the promo post gets rewritten three times some weeks and the run sheet gets built once. Separate skills means iterating on one without reloading the other.</p>
+<p><strong>This one runs in SharePoint.</strong> No external systems, no code, just a list and some documents. It&#39;s the cheapest possible place to put it, and the people who run open mic are already on that site.</p>
+<h2>What comes out</h2>
+<pre><code>&gt; build thursday&#39;s run sheet
+
+**Open Mic - Thursday March 14**
+11 slots, 15 sign-ups. 4 on the wait list.
+
+| # | Artist | Set | Sound check | Notes |
+|---|--------|-----|-------------|-------|
+| 1 | Del Ramirez | 12 min | 6:15 | Regular, plays solo |
+| 2 | Casey Whitmore | 12 min | 6:25 | Regular |
+| 3 | Nia Okafor | 12 min | 6:35 | FIRST TIME |
+| 4 | Tom Bright | 12 min | 6:40 | FIRST TIME |
+...
+| 11 | The Wilder Sons | 20 min | 7:10 | Full band, closing slot |
+
+**Wait list:** Ana Reyes, Kit Doyle, Marcus Vance, Priya Shah
+**Wait list rule:** all four signed up before Wednesday noon and get
+first refusal next week. Ana and Kit were also bumped last week and
+should be slotted regardless.
+
+**Sound check:** 6:15 to 7:30. The Wilder Sons need the full
+20 minutes at 7:10, everything before them is 5 minute checks.
+
+&gt; promo post for this
+
+Thursday night, 8pm, free as always. Eleven acts on the list
+including two first-timers and The Wilder Sons closing it out.
+Coffee&#39;s on until 9. Sign-ups for next week open Sunday.
+</code></pre>
+<p>The wait list note is the interesting part. Nobody wrote &quot;tell people why they got bumped and remember who got bumped last time&quot; as a feature request. It fell out of writing the ordering rules down properly.</p>
+<div class="note brass">
+<p class="eyebrow">The transferable bit</p>
+<p>This is the <b>tribal knowledge capture</b> shape. The work isn't hard, it's just undocumented, and the documentation has never been worth writing because nobody would read it. A skill is documentation that gets read every single time, automatically. That changes the math on writing it.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/scenarios/crate-to-shelf.html"><span class="eyebrow">Previous</span><span>Crate to shelf</span></a><a class="pagenav-item next" href="/skillup/scenarios/consignment.html"><span class="eyebrow">Next</span><span>Consignment intake</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skill Forge - SkillUp</title>
+<meta name="description" content="A live SKILL.md linter. Write on the left, findings on the right.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link is-active" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Lab</p>
+      <h1>Skill Forge</h1>
+      <p class="lede">Twenty rules, every one of them mapped to a page on this site. Type and watch the score move.</p>
+      <div class="forge">
+
+<div class="forge-pane">
+<div class="forge-head">
+<p class="eyebrow">SKILL.md</p>
+<div class="forge-actions">
+<button class="mini" id="forgeBlank" type="button">blank</button>
+<button class="mini" id="forgeCopy" type="button">copy</button>
+<button class="mini" id="forgeDownload" type="button">download</button>
+</div>
+</div>
+<textarea id="skillEditor" spellcheck="false" aria-label="SKILL.md editor"></textarea>
+</div>
+
+<div class="forge-pane">
+<div class="forge-head">
+<p class="eyebrow">Scorecard</p>
+</div>
+<div class="score-wrap">
+<div class="score-top">
+<div class="score-ring">
+<svg viewBox="0 0 84 84" aria-hidden="true">
+<circle class="track" cx="42" cy="42" r="36" fill="none" stroke-width="6"></circle>
+<circle class="bar" id="scoreBar" cx="42" cy="42" r="36" fill="none" stroke-width="6" stroke-linecap="round"></circle>
+</svg>
+<div class="score-num" id="scoreNum">0</div>
+</div>
+<div class="score-copy">
+<b id="scoreGrade">-</b>
+<span id="scoreLine">Start typing.</span>
+</div>
+</div>
+<ul class="findings" id="findings"></ul>
+</div>
+</div>
+
+</div>
+
+<h2>Load a skill</h2>
+<p class="eyebrow" style="margin-bottom:8px">The six annotated samples</p>
+<div class="chips">
+<button class="mini" data-load="vinyl-condition-grading" type="button">vinyl-condition-grading</button>
+<button class="mini" data-load="used-record-pricing" type="button">used-record-pricing</button>
+<button class="mini" data-load="open-mic-runsheet" type="button">open-mic-runsheet</button>
+<button class="mini" data-load="consignment-intake" type="button">consignment-intake</button>
+<button class="mini" data-load="lesson-recap-note" type="button">lesson-recap-note</button>
+<button class="mini" data-load="shop-site-review" type="button">shop-site-review</button>
+</div>
+
+<p class="eyebrow" style="margin-bottom:8px">Three broken on purpose</p>
+<div class="chips">
+<button class="mini" data-load="broken/never-fires" type="button">never fires</button>
+<button class="mini" data-load="broken/fires-constantly" type="button">fires constantly</button>
+<button class="mini" data-load="broken/ignores-instructions" type="button">ignores its own instructions</button>
+</div>
+
+<div class="note">
+<p class="eyebrow">Try this</p>
+<p>Load <b>never fires</b> and read the findings. Then fix only the description, leaving the body alone, and watch the score jump. That's the lesson: <a href="/skillup/200-authoring/descriptions.html">the description does almost all the work</a>.</p>
+</div>
+
+<h2>What it checks, and what it can&#39;t</h2>
+<div class="grid grid-2">
+<div class="card">
+<h4>It checks</h4>
+<p>Frontmatter validity, name format, description length and trigger language, whether the description just restates the name, body structure, output format, hedging language, filler rules, missing ask-don't-guess, credentials, and body length bands.</p>
+</div>
+<div class="card">
+<h4>It can't check</h4>
+<p>Whether your procedure is right. Whether your business rules make sense. Whether it fires against a real model. Whether it overlaps a sibling skill. For those you need a <a href="/skillup/400-advanced/evals.html">test set</a>.</p>
+</div>
+</div>
+
+<div class="note brass">
+<p class="eyebrow">Nothing leaves this page</p>
+<p>The whole linter is a JavaScript file in this site's assets. There's no API call, no server, no telemetry. Your draft is kept in your browser's local storage so you don't lose it on a refresh, and that's the only thing it stores.</p>
+</div>
+
+<h2>The scoring</h2>
+<p>Each rule carries a weight. Passing earns full weight, a warning earns a third, a failure earns none. The score is what you earned over what applied, so rules that don&#39;t apply to your skill don&#39;t count against you.</p>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Grade</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>90+</td>
+<td>A</td>
+<td>Ship it</td>
+</tr>
+<tr>
+<td>80 to 89</td>
+<td>B</td>
+<td>Solid. Fix the warnings when you get a minute</td>
+</tr>
+<tr>
+<td>65 to 79</td>
+<td>C</td>
+<td>It will work, inconsistently</td>
+</tr>
+<tr>
+<td>45 to 64</td>
+<td>D</td>
+<td>Something here is going to bite you</td>
+</tr>
+<tr>
+<td>Under 45</td>
+<td>F</td>
+<td>It won&#39;t fire, or it won&#39;t be followed</td>
+</tr>
+</tbody></table>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/lab/"><span class="eyebrow">Previous</span><span>The lab</span></a><a class="pagenav-item next" href="/skillup/lab/decide.html"><span class="eyebrow">Next</span><span>Should this be a skill?</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+<script src="/skillup/assets/js/forge.js" defer></script>
+</body>
+</html>

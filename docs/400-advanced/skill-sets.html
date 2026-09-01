@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Designing a skill set - SkillUp</title>
+<meta name="description" content="One skill per job to be done, and what to do when two both think they're relevant.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link is-active" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Level 400 / Advanced</p>
+      <h1>Designing a skill set</h1>
+      <p class="lede">Individual skills are easy. A set of forty that don't fight each other is a design problem.</p>
+      <h2>One skill per job to be done</h2>
+<p>Not per department. Not per document type. Per <strong>job somebody is trying to get done</strong>.</p>
+<div class="pair">
+<div class="no">
+<p class="eyebrow">Organized by department</p>
+<p><code>record-floor-skill</code><br><code>cafe-skill</code><br><code>lesson-studio-skill</code></p>
+<p>Three enormous skills that each fire on any conversation touching that area, and load everything.</p>
+</div>
+<div class="yes">
+<p class="eyebrow">Organized by job</p>
+<p><code>vinyl-condition-grading</code><br><code>used-record-pricing</code><br><code>listing-blurb</code><br><code>open-mic-runsheet</code><br><code>lesson-recap-note</code><br><code>consignment-intake</code></p>
+</div>
+</div>
+
+<p>The test: can you name the moment someone needs it? &quot;When a crate comes in and needs grading&quot; is a job. &quot;When somebody&#39;s doing record floor stuff&quot; is a department.</p>
+<h2>The overlap audit</h2>
+<p>Once you have more than about eight skills, run this. It takes twenty minutes and it&#39;s the highest value maintenance you&#39;ll do.</p>
+<ol>
+<li>List every skill&#39;s description in one document.</li>
+<li>For each pair that sounds even slightly similar, write one prompt that could plausibly invoke either.</li>
+<li>Run it. See which fires.</li>
+<li>If you can&#39;t predict the answer, the scopes overlap.</li>
+</ol>
+<p>Fix by making each description name the other&#39;s boundary:</p>
+<div class="pair">
+<div class="no">
+<p class="eyebrow">Ambiguous</p>
+<p><code>vinyl-condition-grading</code>: "Assess used records."<br><code>used-record-pricing</code>: "Price used records."</p>
+</div>
+<div class="yes">
+<p class="eyebrow">Disjoint</p>
+<p><code>vinyl-condition-grading</code>: "...assign a condition grade. Use <b>before pricing</b>, when the grade isn't known yet."<br><code>used-record-pricing</code>: "...set a shelf price from a <b>known</b> grade and recent comps."</p>
+</div>
+</div>
+
+<h2>Chaining, on purpose</h2>
+<p>Related skills should hand off explicitly. Say it in the body.</p>
+<pre><code class="language-markdown">## When to use this
+The condition grade is already known. If it isn&#39;t, use
+vinyl-condition-grading first, then come back.
+</code></pre>
+<p>That one line does three jobs: it scopes the skill, it prevents the wrong one firing, and it tells the agent what to do instead. It&#39;s the cheapest thing on this page.</p>
+<h2>Naming conventions</h2>
+<p>Pick one and never revisit it. Any of these is fine:</p>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th>Convention</th>
+<th>Example</th>
+<th>Good for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;object&gt;-&lt;action&gt;</code></td>
+<td><code>vinyl-condition-grading</code></td>
+<td>Most cases, reads naturally</td>
+</tr>
+<tr>
+<td><code>&lt;domain&gt;-&lt;action&gt;</code></td>
+<td><code>consignment-intake</code></td>
+<td>Sets where the domain is the useful grouping</td>
+</tr>
+<tr>
+<td><code>&lt;action&gt;-&lt;object&gt;</code></td>
+<td><code>grade-vinyl-condition</code></td>
+<td>Teams who scan for verbs</td>
+</tr>
+</tbody></table>
+</div>
+
+<p>Consistency matters more than which one. A list of forty skills in three naming styles is unreadable, and unreadable lists are how duplicates get written.</p>
+<h2>How many is too many?</h2>
+<p>There&#39;s no hard limit, but there are shapes.</p>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>What it needs</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Under 10</td>
+<td>Nothing. Just write them</td>
+</tr>
+<tr>
+<td>10 to 40</td>
+<td>A naming convention and an overlap audit twice a year</td>
+</tr>
+<tr>
+<td>40 to 100</td>
+<td>An owner per skill, test sets, and a review before merge</td>
+</tr>
+<tr>
+<td>Over 100</td>
+<td>Split by audience across multiple agents. One agent with 100 skills matches worse than three agents with 35</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="note brass">
+<p class="eyebrow">The split that usually works</p>
+<p>Split by <b>who's asking</b>, not by what the skill does. At the cafe that's a floor staff agent, a lesson studio agent, and a back-office agent. Each gets the fifteen skills its people actually need, and each matches sharply because it isn't competing with the other thirty.</p>
+</div>
+
+<h2>Deleting is designing</h2>
+<p>The most underused tool in skill set design. A skill nobody&#39;s used in six months is costing you description tokens and matching precision every single turn, in exchange for nothing.</p>
+<p>Delete it. It&#39;s in source control. You can bring it back in ninety seconds if somebody complains, and nobody will.</p>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/400-advanced/bundles.html"><span class="eyebrow">Previous</span><span>Bundled assets</span></a><a class="pagenav-item next" href="/skillup/400-advanced/evals.html"><span class="eyebrow">Next</span><span>Evaluating skills</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

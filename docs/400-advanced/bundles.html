@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bundled assets - SkillUp</title>
+<meta name="description" content="Scripts, templates, checklists, and reference files. When one beats another paragraph.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link is-active" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Level 400 / Advanced</p>
+      <h1>Bundled assets</h1>
+      <p class="lede">Anything in the skill folder is available on demand and costs nothing until it's opened. That's a bigger deal than it sounds.</p>
+      <h2>What can go in the folder</h2>
+<pre><code>consignment-intake/
+  SKILL.md
+  reference/
+    split-terms.md          &lt;- the full terms table, rarely needed
+    state-rules.md          &lt;- consignment law by state
+  templates/
+    payout-statement.md     &lt;- the exact document to produce
+    intake-form.md
+  scripts/
+    calc-split.py           &lt;- only where the platform allows it
+</code></pre>
+<p>The agent sees the folder. It reads a file when the <code>SKILL.md</code> sends it there or when it decides the file is relevant. Otherwise the file costs nothing.</p>
+<h2>The four kinds, and when each earns its place</h2>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Use it when</th>
+<th>Don&#39;t when</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Reference</strong></td>
+<td>The lookup is long and needed in under half of runs</td>
+<td>It&#39;s three lines. Put those in the body</td>
+</tr>
+<tr>
+<td><strong>Template</strong></td>
+<td>The output is a document with a fixed shape</td>
+<td>The shape fits in an output-format block</td>
+</tr>
+<tr>
+<td><strong>Checklist</strong></td>
+<td>The procedure has 15+ verification steps</td>
+<td>It&#39;s the procedure itself. That&#39;s the body</td>
+</tr>
+<tr>
+<td><strong>Script</strong></td>
+<td>The step is deterministic computation the model shouldn&#39;t do by hand</td>
+<td>The platform can&#39;t run code, which is most of them</td>
+</tr>
+</tbody></table>
+</div>
+
+<h2>The decision rule</h2>
+<p>Ask two questions.</p>
+<p><strong>How often is it needed?</strong> Under half of runs, bundle it. More than half, it&#39;s the body.</p>
+<p><strong>How long is it?</strong> Under about 20 lines, it&#39;s the body regardless. The overhead of a separate file isn&#39;t worth it.</p>
+<div class="pair">
+<div class="no">
+<p class="eyebrow">Wrong shape</p>
+<p>A 900-line Goldmine reference pasted into the body of <code>vinyl-condition-grading</code>, which fires several times a day. Ninety-five percent of runs pay for box-set and Japanese-pressing rules that don't apply.</p>
+</div>
+<div class="yes">
+<p class="eyebrow">Right shape</p>
+<p>A 70-line body covering the common cases, plus <code>goldmine-full.md</code> bundled beside it, with one line in the body: "For box sets, promos, or non-US pressings, see goldmine-full.md."</p>
+</div>
+</div>
+
+<h2>Point at them explicitly</h2>
+<p>The agent is better at using a bundled file when the body tells it when to reach for one. One line each.</p>
+<pre><code class="language-markdown">## References
+- Box sets, promos, or non-US pressings: see `goldmine-full.md`
+- Producing a payout statement: use `templates/payout-statement.md`
+  exactly, do not reformat it
+</code></pre>
+<p>That&#39;s the whole technique. &quot;See X for Y&quot; beats hoping the agent notices the file.</p>
+<h2>Templates deserve special mention</h2>
+<p>If your skill produces a document, a bundled template is almost always better than describing the document.</p>
+<div class="pair">
+<div class="no">
+<p class="eyebrow">In the body</p>
+<p>Four paragraphs describing what a consignment payout statement contains, in what order, with what headings and what disclaimer at the bottom.</p>
+</div>
+<div class="yes">
+<p class="eyebrow">As a template</p>
+<p>The actual statement, with <code>[placeholders]</code>, in <code>templates/payout-statement.md</code>. One line in the body: "Use templates/payout-statement.md exactly."</p>
+</div>
+</div>
+
+<p>The template version is shorter, more accurate, and editable by the person who owns the document rather than the person who owns the skill. That last part matters more than it sounds.</p>
+<div class="note warn">
+<p class="eyebrow">Portability note</p>
+<p>Bundled files travel well in a ZIP package to Copilot Studio and in a skill folder to GitHub Copilot. <a href="/skillup/300-shipping/m365.html">Keep it simple in SharePoint</a>, and remember scripts only run where the platform allows code execution at all, which is a short list.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/400-advanced/skills-plus-tools.html"><span class="eyebrow">Previous</span><span>Skills that drive tools</span></a><a class="pagenav-item next" href="/skillup/400-advanced/skill-sets.html"><span class="eyebrow">Next</span><span>Designing a skill set</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>
