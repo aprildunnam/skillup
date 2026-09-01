@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copilot Studio - SkillUp</title>
+<meta name="description" content="Creating, uploading, and testing skills on agents powered by the GitHub Copilot harness.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link is-active" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Level 300 / Shipping</p>
+      <h1>Copilot Studio</h1>
+      <p class="lede">Skills in Copilot Studio sit next to instructions, knowledge, and tools as a first class agent component.</p>
+      <h2>Where they live</h2>
+<p>Open your agent, go to the <strong>Build</strong> tab, and find <strong>Skills</strong> in the components panel. Everything happens there.</p>
+<div class="note warn">
+<p class="eyebrow">Prerequisite worth checking first</p>
+<p>Skills apply to agents and workflows powered by the <b>GitHub Copilot harness</b>. If your agent was built on a different harness, the Skills panel isn't the thing you're looking for. Check the harness before you spend an afternoon.</p>
+</div>
+
+<h2>Creating one from blank</h2>
+<ol>
+<li><strong>Build</strong> tab, components panel, <strong>Skills</strong>.</li>
+<li><strong>Add skill</strong>, then <strong>Create from blank</strong>.</li>
+<li><strong>Name</strong>: lowercase letters, numbers, and hyphens. No leading or trailing hyphen. This is enforced.</li>
+<li><strong>Description</strong>: what it does and when to activate. This is the field the orchestration runtime reads when deciding whether to invoke your skill, so it does the work described in <a href="/skillup/200-authoring/descriptions.html">Level 200</a>.</li>
+<li><strong>Instructions</strong>: your markdown body.</li>
+<li><strong>Create</strong>. It shows up in the components panel.</li>
+</ol>
+<p>Then test it in the <strong>Preview</strong> tab, which is where the <a href="/skillup/200-authoring/testing.html">tightening loop</a> actually happens.</p>
+<h2>Uploading an existing skill</h2>
+<p>If you wrote the file in a text editor, or you&#39;re bringing one over from a repo, upload it instead of retyping it.</p>
+<p>A skill package is a ZIP containing:</p>
+<ul>
+<li>A <code>SKILL.md</code> with YAML frontmatter and markdown instructions</li>
+<li>Optional supporting files: scripts, templates, reference documents</li>
+</ul>
+<p>That package format is the portability story. The same ZIP is what you hand a coworker, commit to a repo, or attach to a second agent.</p>
+<pre><code>open-mic-runsheet.zip
+  SKILL.md
+  templates/
+    runsheet.md
+    promo-post.md
+</code></pre>
+<h2>Editing and managing</h2>
+<p>Skills you created from blank stay editable from the skill configuration panel at any time. That&#39;s the fast loop: tweak the description, hit Preview, ask again.</p>
+<p>Skills added from an uploaded package are managed as a unit. Change the file, repackage, re-upload.</p>
+<div class="note brass">
+<p class="eyebrow">Budget for the loop, not the run</p>
+<p>Usage-based billing applies to using, building, testing, <em>and evaluating</em> agents on the GitHub Copilot harness, and those actions can consume Copilot Credits. Iterating on a skill twenty times in an afternoon is a real cost, not a free dev loop. Write the first draft in a text editor, upload it, and use Preview to confirm rather than to explore.</p>
+</div>
+
+<h2>Skills next to the other components</h2>
+<p>Worth keeping straight while you&#39;re in the Build tab, because all four live in the same panel:</p>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>What it is</th>
+<th>Managed by</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Instructions</td>
+<td>General agent behavior and personality</td>
+<td>Identity configuration</td>
+</tr>
+<tr>
+<td>Knowledge</td>
+<td>Data the agent can reference</td>
+<td>Knowledge sources</td>
+</tr>
+<tr>
+<td>Tools</td>
+<td>Actions via external services</td>
+<td>Connectors, APIs, MCP servers</td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>Reusable, task-specific capabilities</td>
+<td>Skill files or packages</td>
+</tr>
+</tbody></table>
+</div>
+
+<p>Skills can and should tell the agent how to use its tools. That&#39;s the <a href="/skillup/400-advanced/skills-plus-tools.html">pattern in Level 400</a> and it&#39;s where Copilot Studio skills get genuinely powerful, because unlike SharePoint skills they can reach outside.</p>
+<h2>At the cafe</h2>
+<p>The consignment agent lives here. Local musicians drop off CDs and vinyl on consignment, and the agent handles intake: terms, split, payout schedule, and writing the row into the tracking system.</p>
+<p>It needs to reach the inventory system, so it needs tools. It needs a strict procedure that nobody deviates from, because it&#39;s effectively a contract. That&#39;s a skill plus tools on a real agent, which is exactly what Copilot Studio is for. Full walkthrough in <a href="/skillup/scenarios/consignment.html">the consignment scenario</a>.</p>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/300-shipping/"><span class="eyebrow">Previous</span><span>One file, many shelves</span></a><a class="pagenav-item next" href="/skillup/300-shipping/m365.html"><span class="eyebrow">Next</span><span>M365 Copilot and SharePoint</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

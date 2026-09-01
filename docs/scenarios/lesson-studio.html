@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The lesson studio - SkillUp</title>
+<meta name="description" content="Weekly progress notes that parents actually read. Two skills, one tool, and a tone rule that's genuinely hard to write.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link is-active" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Scenario 04</p>
+      <h1>The lesson studio</h1>
+      <p class="lede">Four teachers, sixty students, and notes that are either three words or three paragraphs with nothing in between.</p>
+      <h2>The job</h2>
+<p>Every student gets a note after their lesson. It goes to the parent for anyone under 16, to the student otherwise. It should say what they worked on, what&#39;s going well, and what to practice this week.</p>
+<p>Sixty students. Four teachers, all of whom would rather be teaching.</p>
+<h2>What breaks</h2>
+<div class="grid grid-2">
+<div class="card">
+<h4>Length is bimodal</h4>
+<p>"Good lesson!" or four paragraphs. Parents get one or the other and both are unsatisfying.</p>
+</div>
+<div class="card">
+<h4>Comparison creeps in</h4>
+<p>"She's a bit behind where most students are at this point." Nobody means harm and every parent hears it as a verdict.</p>
+</div>
+<div class="card">
+<h4>No practice task</h4>
+<p>The most useful line is the one most often missing. Parents want something to do.</p>
+</div>
+<div class="card">
+<h4>Teachers write them at 9pm</h4>
+<p>Two days late, from memory, which is where most of the above comes from.</p>
+</div>
+</div>
+
+<h2>The build</h2>
+<div class="stack-rows">
+<div class="stack-row"><b>Skill</b><p><code>lesson-recap-note</code>. Three-line format, tone rules, an explicit ban on comparative language, and a required practice task with minutes attached. <a href="/skillup/samples/lesson-recap-note.html">Read the file.</a></p></div>
+<div class="stack-row"><b>Skill</b><p><code>practice-plan</code>. Used monthly rather than weekly. Builds a four week practice arc from the last four recaps, for students who've plateaued.</p></div>
+<div class="stack-row"><b>Tool</b><p>The lesson log. Where teachers dump rough notes during or right after the lesson.</p></div>
+<div class="stack-row"><b>Knowledge</b><p>The studio's curriculum outline, so the skill knows what "the next thing" is for a given instrument and level.</p></div>
+</div>
+
+<h3>Why each thing is what it is</h3>
+<p><strong>The tone rule is the hard part, and it&#39;s taught by example.</strong> &quot;Be encouraging but honest&quot; is an instruction that changes nothing. What works is a labeled wrong-and-right pair:</p>
+<pre><code class="language-markdown">Wrong:
+  &quot;Ellie is behind where most students are at eight weeks and is
+  struggling with chord transitions.&quot;
+
+Right:
+  &quot;Ellie&#39;s got the C and G shapes solid. Transitions between them
+  are the current work, which is normal at this stage. Ten minutes
+  of switching practice a day will move it quickly.&quot;
+</code></pre>
+<p>Same facts. The example carries the rule better than any adjective, and it quietly demonstrates the give-them-something-to-do habit nobody wrote down. More on that technique in <a href="/skillup/200-authoring/examples.html">Show, don&#39;t tell</a>.</p>
+<p><strong>The three-line format enforces the length.</strong> Not &quot;be concise,&quot; which does nothing. An actual three-line template, which does everything.</p>
+<p><strong><code>practice-plan</code> is monthly, so it&#39;s a separate skill.</strong> Bundling it into the weekly recap would load a monthly procedure fifty-two times a year to use it twelve.</p>
+<p><strong>Curriculum is knowledge, not a skill.</strong> &quot;What comes after open chords on guitar&quot; is a fact to look up. &quot;How we write a note to a parent&quot; is a procedure. Classic <a href="/skillup/100-foundations/which-is-which.html">which-is-which</a> call.</p>
+<h2>What comes out</h2>
+<pre><code>&gt; ellie, guitar, week 8. worked on C to G transitions, still slow but
+&gt; the shapes are clean now. she got frustrated halfway through.
+
+**What we worked on:** C and G chord transitions.
+**Going well:** Both shapes are clean and she&#39;s fretting them without
+looking now, which is the harder half.
+**This week&#39;s practice:** Ten minutes a day of just switching between
+C and G. No song, no strumming, just the change. Speed comes after
+the movement is automatic.
+
+&gt; the frustration thing, should that go in?
+
+Not in the note. It&#39;s real and worth telling the parent in person
+if it repeats, but written down it reads as a judgment about the
+student rather than an observation about one lesson. Log it in the
+lesson notes so you have the pattern if it comes up again.
+</code></pre>
+<p>The second half is the skill doing its actual job. It knows the difference between what belongs in a written note that a parent will keep and what belongs in an internal log, because somebody wrote that rule down once.</p>
+<div class="note brass">
+<p class="eyebrow">The transferable bit</p>
+<p>This is the <b>house voice</b> shape. Anywhere a team writes things to customers, patients, students, or clients and the writing quality varies by who's on shift, the fix is a format plus two or three worked examples. Not a style guide. Nobody reads style guides.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/scenarios/consignment.html"><span class="eyebrow">Previous</span><span>Consignment intake</span></a><a class="pagenav-item next" href="/skillup/scenarios/counter-service.html"><span class="eyebrow">Next</span><span>Counter service</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

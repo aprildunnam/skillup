@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consignment intake - SkillUp</title>
+<meta name="description" content="Terms, splits, and a paper trail that holds up six months later. Two skills, three tools, bundled templates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link is-active" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Scenario 03</p>
+      <h1>Consignment intake</h1>
+      <p class="lede">Thirty local musicians have stock on the shelves. Every one of them will eventually ask about a check.</p>
+      <h2>The job</h2>
+<p>Local artists drop off CDs and vinyl on consignment. Intake has to capture:</p>
+<ul>
+<li>Artist name, contact, title, format, quantity</li>
+<li>The agreed split, which is 60/40 as standard but negotiable</li>
+<li>Shelf date and review date</li>
+<li>A signed record of the terms</li>
+</ul>
+<p>Then, monthly, each artist gets a payout statement showing what sold, at what price, and what they&#39;re owed.</p>
+<h2>What breaks</h2>
+<div class="grid grid-2">
+<div class="card">
+<h4>Terms get agreed verbally</h4>
+<p>"We said 70/30 for mine." Did we? Nobody knows. The shop eats it, every time.</p>
+</div>
+<div class="card">
+<h4>Intake forms are incomplete</h4>
+<p>Missing contact email is the most common. Which surfaces six months later, when there's a check and nowhere to send it.</p>
+</div>
+<div class="card">
+<h4>Payout statements are hand-built</h4>
+<p>In a spreadsheet, differently each time, by whoever's free. Two artists get statements that don't look like each other.</p>
+</div>
+<div class="card">
+<h4>Nobody reviews stale stock</h4>
+<p>Records that haven't moved in a year, still on the shelf, still on the books.</p>
+</div>
+</div>
+
+<h2>The build</h2>
+<div class="stack-rows">
+<div class="stack-row"><b>Skill</b><p><code>consignment-intake</code>. The full intake procedure: what to capture, how to validate it, what the standard terms are, what requires the owner's sign-off, and what to do when a field is missing. <a href="/skillup/samples/consignment-intake.html">Read the file.</a></p></div>
+<div class="stack-row"><b>Skill</b><p><code>consignment-payout</code>. Monthly statements. Pulls sales, applies the split on record for that artist, produces the statement from a template.</p></div>
+<div class="stack-row"><b>Tool</b><p>Consignment register. Reads and writes the artist, terms, and stock records.</p></div>
+<div class="stack-row"><b>Tool</b><p>Sales query. What sold, when, at what price, for which consigned item.</p></div>
+<div class="stack-row"><b>Tool</b><p>Email. Sends the statement, or flags an artist with no contact on file.</p></div>
+<div class="stack-row"><b>Bundled</b><p><code>reference/split-terms.md</code> and <code>templates/payout-statement.md</code>, both alongside the SKILL.md.</p></div>
+</div>
+
+<h3>Why each thing is what it is</h3>
+<p><strong>This one has to be an agent in Copilot Studio.</strong> It reaches three external systems and it writes records. SharePoint skills <a href="/skillup/300-shipping/m365.html">can&#39;t do that</a>, so the shelf is decided by the requirements, not by preference.</p>
+<p><strong>The skill validates, the tool writes.</strong> The skill&#39;s job is knowing that an intake without a contact email is invalid, that a non-standard split needs the owner&#39;s approval, and that a review date is 12 months out unless agreed otherwise. The tool just writes the row. Keeping the rules out of the connector means changing the standard split is a text edit, not a code change.</p>
+<p><strong>The statement is a bundled template, not prose.</strong> It&#39;s a financial document with a fixed shape and a disclaimer at the bottom. <a href="/skillup/400-advanced/bundles.html">Describing it in the body</a> would be longer, less accurate, and unmaintainable by the person who actually owns the wording.</p>
+<p><strong><code>reference/split-terms.md</code> is bundled, not in the body.</strong> Non-standard splits come up maybe one intake in twelve. Everything about them can sit in a file that costs nothing eleven times out of twelve.</p>
+<h2>What comes out</h2>
+<pre><code>&gt; new consignment, Nia Okafor, 20 copies of her LP &quot;Terrace Hymns&quot;
+
+Before I write this in, I need a few things:
+
+- Contact email for Nia (required, this is where payouts go)
+- Format confirmation: LP only, or is there a CD too?
+- Split: standard 60/40 in the artist&#39;s favor, or something agreed?
+
+&gt; email is nia@example.com, LP only, she asked for 70/30
+
+70/30 is above the standard 60/40 and needs April&#39;s sign-off before
+I can register it. Two options:
+
+1. Register at the standard 60/40 now and amend once approved
+2. Hold the intake as pending and flag it for April
+
+Which do you want? I&#39;d suggest 2, because amending a registered
+split leaves two records and that&#39;s what causes disputes later.
+
+&gt; hold it, flag for april
+
+Held as pending.
+
+**Consignment intake - PENDING APPROVAL**
+Artist: Nia Okafor
+Contact: nia@example.com
+Title: Terrace Hymns
+Format: LP, 20 copies
+Requested split: 70/30 (artist favor)
+Standard split: 60/40
+Shelf date: on approval
+Review date: 12 months from shelf date
+Flagged to: April
+Reason: split above standard, requires owner approval
+</code></pre>
+<p>The refusal is the feature. A skill that would have quietly registered a 70/30 split because somebody asked nicely is worse than no skill.</p>
+<div class="note brass">
+<p class="eyebrow">The transferable bit</p>
+<p>This is the <b>gatekeeping</b> shape, and it's the highest value thing skills do in a business. Any process where "somebody agreed to something they shouldn't have" is a recurring cost is a candidate. The skill's job isn't to be helpful. It's to know what requires approval and refuse to proceed without it.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/scenarios/open-mic.html"><span class="eyebrow">Previous</span><span>Open mic night</span></a><a class="pagenav-item next" href="/skillup/scenarios/lesson-studio.html"><span class="eyebrow">Next</span><span>The lesson studio</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

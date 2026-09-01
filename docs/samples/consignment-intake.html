@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>consignment-intake - SkillUp</title>
+<meta name="description" content="Validation and gatekeeping. The skill whose main job is to refuse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link is-active" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Sample 04 / Saying no properly</p>
+      <h1>consignment-intake</h1>
+      <p class="lede">The most valuable thing this skill does is decline to register something. That's not a limitation, it's the feature.</p>
+      <div class="chips"><span class="chip">Copilot Studio</span><span class="chip">needs 3 tools</span><span class="chip">writes records</span><span class="chip">~60 lines</span></div>
+
+<p><button class="mini" data-load-skill="consignment-intake">Open this in the Skill Forge</button></p>
+
+<h2>The file</h2>
+<pre><code class="language-markdown">---
+name: consignment-intake
+description: Register a new consignment of CDs or vinyl from a local artist, including terms, split, and review date. Use when an artist drops off stock, when someone asks to add a consignment, or when checking whether an intake form is complete.
+---
+
+# Consignment intake
+
+## When to use this
+An artist is placing stock with the shop on consignment and it needs
+registering. Also use to validate an intake form somebody else filled in.
+
+Do not use this for stock the shop has bought outright. That is a
+purchase, not a consignment.
+
+## Required fields
+An intake is invalid without all of these. Ask for anything missing.
+Do not register a partial intake.
+
+- Artist name
+- Contact email (this is where payouts go, so it is not optional)
+- Title
+- Format: LP, 45, CD, or cassette
+- Quantity
+- Agreed split
+
+## Standard terms
+- Standard split is 60/40 in the artist&#39;s favor.
+- Review date is 12 months from shelf date unless agreed otherwise.
+- Unsold stock at review is returned or renewed, artist&#39;s choice.
+
+## Anything above standard needs approval
+A split above 60/40, a review period over 12 months, or a quantity over
+50 units requires the owner&#39;s sign-off before registration.
+
+When that happens, offer two options and recommend the second:
+1. Register at standard terms now and amend after approval.
+2. Hold as pending and flag for approval.
+
+Recommend option 2, because amending a registered split leaves two
+records and that is what causes disputes later.
+
+## Steps
+1. Collect every required field. Ask for anything missing.
+2. Check the agreed terms against the standard terms above.
+3. If anything is above standard, stop and offer the two options.
+4. Write the record using the consignment register tool.
+5. Confirm back with the registered values.
+
+## Output format
+**Consignment intake - [REGISTERED or PENDING APPROVAL]**
+Artist: [name]
+Contact: [email]
+Title: [title]
+Format: [format], [quantity] copies
+Split: [split] (artist favor)
+Shelf date: [date, or &quot;on approval&quot;]
+Review date: [date, or &quot;12 months from shelf date&quot;]
+[If pending: Flagged to / Reason]
+
+## References
+For non-standard split structures, see `reference/split-terms.md`.
+</code></pre>
+<h2>What makes this work</h2>
+<h3>Required fields are stated as a hard gate</h3>
+<blockquote>
+<p>An intake is invalid without all of these. Ask for anything missing. Do not register a partial intake.</p>
+</blockquote>
+<p>Not &quot;try to collect.&quot; Not &quot;ideally include.&quot; A partial intake is invalid, full stop. Firm language matters here because a model reading &quot;should generally include&quot; will happily proceed without an email address.</p>
+<h3>It knows what it isn&#39;t allowed to decide</h3>
+<blockquote>
+<p>A split above 60/40, a review period over 12 months, or a quantity over 50 units requires the owner&#39;s sign-off before registration.</p>
+</blockquote>
+<p>Three thresholds, each one a case where the shop has been burned. The skill&#39;s job isn&#39;t to be maximally helpful, it&#39;s to know the edge of its own authority. <a href="/skillup/scenarios/consignment.html">More on that shape.</a></p>
+<h3>It recommends, and says why</h3>
+<blockquote>
+<p>Recommend option 2, because amending a registered split leaves two records and that is what causes disputes later.</p>
+</blockquote>
+<p>The reason is in the skill. That means when the agent explains the recommendation, it explains it correctly, and the person on the other end learns something instead of just being told.</p>
+<h3>The boundary line does real work</h3>
+<blockquote>
+<p>Do not use this for stock the shop has bought outright. That is a purchase, not a consignment.</p>
+</blockquote>
+<p>Outright purchases and consignments look nearly identical at intake. Without that line this skill fires on both, and registers a purchase as consigned stock. Six months later somebody&#39;s owed money they aren&#39;t owed.</p>
+<h3>The rare case is bundled</h3>
+<blockquote>
+<p>For non-standard split structures, see <code>reference/split-terms.md</code>.</p>
+</blockquote>
+<p>Non-standard splits come up maybe one intake in twelve. The full terms table sits in a file and costs nothing the other eleven times.</p>
+<div class="note brass">
+<p class="eyebrow">The pattern to steal</p>
+<p>Required fields, standard terms, thresholds requiring approval, and an explicit "here are your two options, I recommend this one." That structure works for anything with a contract at the end of it: quotes, discounts, refunds, purchase orders, waivers.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/samples/open-mic-runsheet.html"><span class="eyebrow">Previous</span><span>open-mic-runsheet</span></a><a class="pagenav-item next" href="/skillup/samples/lesson-recap-note.html"><span class="eyebrow">Next</span><span>lesson-recap-note</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+<script src="/skillup/assets/js/sample.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillUp - Agent Skills from zero to advanced</title>
+<meta name="description" content="Learn what Agent Skills are, when to build one, and how to ship it across M365 Copilot, Copilot Studio, and GitHub Copilot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="{{base}}assets/css/site.css">
+<link rel="icon" href="{{base}}assets/favicon.svg" type="image/svg+xml">
+</head>
+<body class="is-home">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="{{base}}">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="{{repo}}">GitHub</a>
+  </div>
+</header>
+
+<main id="main" class="home">{{content}}</main>
+
+<footer class="foot foot-home">
+  <p>SkillUp is a teaching site. Every example runs on <a href="{{base}}scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+  <p><a href="{{repo}}">Source on GitHub</a> &middot; MIT licensed &middot; {{year}}</p>
+</footer>
+
+<script src="{{base}}assets/js/site.js" defer></script>
+</body>
+</html>

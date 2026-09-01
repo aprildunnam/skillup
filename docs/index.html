@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillUp - Agent Skills from zero to advanced</title>
+<meta name="description" content="Learn what Agent Skills are, when to build one, and how to ship it across M365 Copilot, Copilot Studio, and GitHub Copilot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body class="is-home">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+  </div>
+</header>
+
+<main id="main" class="home"><section class="hero">
+<p class="eyebrow">A course site for Agent Skills</p>
+
+<h1>Skills are the <em>easiest</em> thing you&#39;re not using yet.</h1>
+<p class="lede">A skill is a folder with a markdown file in it that teaches your agent how your team does a thing. That's it. This site takes you from "what even is that" to running your own skill library, and gives you a lab to build one badly and find out why.</p>
+
+<div class="hero-actions">
+<a class="btn" href="/skillup/100-foundations/">Start at the beginning</a>
+<a class="btn ghost" href="/skillup/lab/forge.html">Open the Skill Forge</a>
+<a class="btn ghost" href="/skillup/scenarios/">See it running a record shop</a>
+</div>
+</section>
+
+<h2>Four levels, one file format</h2>
+<p class="section-lede">Every level ends with something you can do, not something you've read. Start at 100 even if you've built agents before, because the loading model in Level 100 is what makes the rest click.</p>
+
+<div class="levelgrid">
+<a class="levelcard" href="/skillup/100-foundations/"><span class="num">LEVEL 100</span><b>Foundations</b><span class="d">What a skill is, how the agent decides to use it, and how it's different from instructions, knowledge, and tools.</span></a>
+<a class="levelcard" href="/skillup/200-authoring/"><span class="num">LEVEL 200</span><b>Authoring</b><span class="d">Writing one that actually fires. Descriptions, body structure, the five ways skills fail, and how to fix each one.</span></a>
+<a class="levelcard" href="/skillup/300-shipping/"><span class="num">LEVEL 300</span><b>Shipping</b><span class="d">The same file installed in Copilot Studio, M365 Copilot, SharePoint, GitHub Copilot, and VS Code.</span></a>
+<a class="levelcard" href="/skillup/400-advanced/"><span class="num">LEVEL 400</span><b>Advanced</b><span class="d">Token economy, skills that drive tools, bundled assets, designing a skill set, and evaluating whether any of it works.</span></a>
+</div>
+
+<h2>Three tools in the lab</h2>
+<p class="section-lede">All of it runs in your browser. No sign in, no API key, nothing leaves the page.</p>
+
+<div class="tocgrid">
+<a class="toccard" href="/skillup/lab/forge.html"><b>Skill Forge</b><span>Write a SKILL.md and watch a live scorecard tell you exactly which line is going to break it.</span></a>
+<a class="toccard" href="/skillup/lab/decide.html"><b>Should this be a skill?</b><span>Seven questions. Six possible verdicts. Most of the time the answer is no, and that's useful to know.</span></a>
+<a class="toccard" href="/skillup/lab/ideas.html"><b>Idea generator</b><span>Pick your role and your platform, get three skills worth building, loaded straight into the Forge.</span></a>
+</div>
+
+<h2>Everything here happens at one record shop</h2>
+<div class="shopcard">
+<h3>April's Acoustic Cafe</h3>
+<p>Used vinyl out front, a six seat espresso bar in the middle, three lesson rooms in the back, and an open mic every Thursday. Eleven staff, one overloaded owner, and a pile of repeatable work nobody has written down.</p>
+<p>Every example on this site is a real job somebody at the shop actually does. That's on purpose. Skills are boring in the abstract and obvious the second you attach them to a person with a task.</p>
+<div class="depts"><span>record floor</span><span>cafe counter</span><span>lesson studio</span><span>open mic</span><span>consignment</span><span>online store</span></div>
+</div>
+
+<p style="margin-top:22px"><a class="btn ghost" href="/skillup/scenarios/">Walk through the five scenarios</a></p>
+
+<h2>This is not a skill library</h2>
+<p class="section-lede">There's already a good one, and it's better than anything this site would build.</p>
+
+<div class="note">
+<p class="eyebrow">Go get skills here</p>
+<p><a href="https://microsoft.github.io/skills">microsoft.github.io/skills</a> is a browsable explorer with 175+ skills, custom agents, and MCP configurations, installable with a single <code>npx skills add microsoft/skills</code>. Source at <a href="https://github.com/microsoft/skills">github.com/microsoft/skills</a>.</p>
+<p>SkillUp teaches you to read those, judge them, fix them, and write your own. The <a href="/skillup/samples/">six samples here</a> exist to be studied line by line, not installed.</p>
+</div>
+</main>
+
+<footer class="foot foot-home">
+  <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+  <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+</footer>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+</body>
+</html>

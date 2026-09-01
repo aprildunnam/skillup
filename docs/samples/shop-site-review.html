@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shop-site-review - SkillUp</title>
+<meta name="description" content="Repo-scoped, for GitHub Copilot. The only sample with a license field.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link is-active" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Sample 06 / Repo scope</p>
+      <h1>shop-site-review</h1>
+      <p class="lede">Skills aren't only for business users. This one lives in a repo and reviews pull requests.</p>
+      <div class="chips"><span class="chip">GitHub Copilot</span><span class="chip">VS Code</span><span class="chip">.github/skills/</span><span class="chip">~50 lines</span></div>
+
+<p><button class="mini" data-load-skill="shop-site-review">Open this in the Skill Forge</button></p>
+
+<h2>Where it lives</h2>
+<pre><code>shop-storefront/
+  .github/skills/
+    shop-site-review/
+      SKILL.md
+</code></pre>
+<p>Committed to the repo, so everyone who clones it gets the same review standards. That&#39;s the <a href="/skillup/300-shipping/github-copilot.html">repo scope</a> argument in one sentence.</p>
+<h2>The file</h2>
+<pre><code class="language-markdown">---
+name: shop-site-review
+description: Review changes to the shop storefront for accessibility and content standards before merge. Use when reviewing a pull request, a component, a page template, or product copy for the online store.
+license: MIT
+---
+
+# Shop site review
+
+## When to use this
+Someone is changing the storefront and wants a review, or a PR needs
+checking before merge. Applies to templates, components, and product copy.
+
+Do not use this for backend or inventory sync code. This skill only
+covers what a customer sees.
+
+## Steps
+1. Read the diff. Identify every user-facing change.
+2. Run the accessibility checks below on each one.
+3. Run the content checks below on each one.
+4. Report findings grouped by file, most severe first.
+
+## Accessibility checks
+- Every image has meaningful alt text. Decorative images have `alt=&quot;&quot;`.
+  A record sleeve is never decorative. Its alt text is the artist and
+  title.
+- Text contrast meets 4.5:1 against its actual background, not the
+  background you assume.
+- Every interactive element is reachable by keyboard and has a visible
+  focus state.
+- Form inputs have associated labels. Placeholder text is not a label.
+- Heading levels do not skip.
+
+## Content checks
+- Condition grades use the Goldmine abbreviations, never plain English.
+  &quot;VG+&quot;, not &quot;very good plus&quot;, and never &quot;good condition.&quot;
+- Prices show as $XX with no cents.
+- Product copy discloses condition faults. A listing that omits a seam
+  split is a returns problem, not a copy problem.
+- No placeholder text. No lorem, no &quot;TODO&quot;, no &quot;Product description&quot;.
+
+## Output format
+For each finding:
+
+`path/to/file.html:LINE` - **[a11y or content]** - what is wrong, and the fix.
+
+If nothing is wrong, say so in one line. Do not invent findings.
+
+## Rules
+- Report the fix, not just the problem.
+- Do not comment on code style. That is what the linter is for.
+- If the diff is over 400 lines, say so and ask which files matter most
+  rather than skimming all of them.
+</code></pre>
+<h2>What makes this work</h2>
+<h3>It carries a license field</h3>
+<p>The only sample here that does. <code>license</code> is a GitHub Copilot frontmatter field and it&#39;s <a href="/skillup/300-shipping/portability.html">ignored elsewhere</a>, which is fine. If you might publish a skill, put a license on it.</p>
+<h3>It has no allowed-tools field, on purpose</h3>
+<p>This skill reads a diff and reports findings. It doesn&#39;t need shell access, so it doesn&#39;t ask for it. Pre-approving <code>bash</code> when you don&#39;t need it is a security decision made for no reason.</p>
+<h3>The checks are specific to this shop</h3>
+<p>Generic accessibility advice is what a linter is for. What earns this skill its place is the four lines nobody else&#39;s review would catch:</p>
+<ul>
+<li>A record sleeve image is never decorative, its alt text is artist and title</li>
+<li>Condition grades use Goldmine abbreviations, never plain English</li>
+<li>Prices show as $XX with no cents</li>
+<li>A listing that omits a seam split is a returns problem</li>
+</ul>
+<p>That&#39;s institutional knowledge about an online record store. No off-the-shelf tool has it.</p>
+<h3>It stays in its lane</h3>
+<blockquote>
+<p>Do not comment on code style. That is what the linter is for.</p>
+</blockquote>
+<p>Without that line the skill will review formatting, and then people stop reading its output, and then the skill is worthless. Knowing what <em>not</em> to do is half of a good review skill.</p>
+<h3>It handles the too-big case</h3>
+<blockquote>
+<p>If the diff is over 400 lines, say so and ask which files matter most rather than skimming all of them.</p>
+</blockquote>
+<p>A 900-line diff produces either a shallow review or a very long one. Neither is useful. Asking is the right answer and it has to be written down, because the default behavior is to try anyway.</p>
+<h3>The output format is a grep-able line</h3>
+<p><code>path/to/file.html:LINE - **[a11y or content]** - what is wrong, and the fix.</code></p>
+<p>Structured enough to scan, specific enough to act on, and it includes the fix rather than just the complaint.</p>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/samples/lesson-recap-note.html"><span class="eyebrow">Previous</span><span>lesson-recap-note</span></a><a class="pagenav-item next" href="/skillup/lab/"><span class="eyebrow">Next</span><span>The lab</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+<script src="/skillup/assets/js/sample.js" defer></script>
+</body>
+</html>

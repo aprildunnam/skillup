@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The showcase - SkillUp</title>
+<meta name="description" content="Five end to end builds at April's Acoustic Cafe, each one a complete picture of skills, tools, and knowledge working together.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link is-active" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Scenarios</p>
+      <h1>The showcase</h1>
+      <p class="lede">Levels 100 through 400 teach you the parts. This section shows five finished machines, so you can see where the parts go.</p>
+      <h2>The shop</h2>
+<p>April&#39;s Acoustic Cafe is a used record store with a six seat espresso bar in the middle, three lesson rooms in the back, and an open mic every Thursday. Eleven staff. One owner who is very tired.</p>
+<p>None of this is real. All of it is the kind of work that skills are actually for: repeatable, house-specific, written down nowhere, and currently living in one person&#39;s head.</p>
+<div class="shopcard">
+<h3>What's on the floor</h3>
+<p>Roughly 6,000 used LPs and 45s, a small new-release wall, consignment stock from about thirty local musicians, a coffee counter, a lesson studio with four teachers, and a storefront that sells maybe a dozen records a week online.</p>
+<div class="depts"><span>record floor</span><span>cafe counter</span><span>lesson studio</span><span>open mic</span><span>consignment</span><span>online store</span></div>
+</div>
+
+<h2>The five scenarios</h2>
+<p>Each one shows the same four things: the job, what breaks without skills, the skills, tools, and knowledge that make it work, and what actually comes out the other end.</p>
+<div class="scenes">
+
+<a class="scene" href="/skillup/scenarios/crate-to-shelf.html">
+<h3>Crate to shelf</h3>
+<p>A crate of used vinyl comes in Tuesday. By Thursday it needs to be graded, priced, tagged, listed online, and on the floor. Four people currently do this four different ways.</p>
+<div class="parts"><span>3 skills</span><span>2 tools</span><span>1 knowledge source</span></div>
+</a>
+
+<a class="scene" href="/skillup/scenarios/open-mic.html">
+<h3>Open mic night</h3>
+<p>Fifteen sign-ups, eleven slots, one sound check window, and a promo post that has to go out Wednesday. Every week. Currently a text document somebody rebuilds from scratch.</p>
+<div class="parts"><span>2 skills</span><span>1 tool</span><span>2 templates</span></div>
+</a>
+
+<a class="scene" href="/skillup/scenarios/consignment.html">
+<h3>Consignment intake</h3>
+<p>Local musicians drop off stock on consignment. Terms, splits, payout schedules, and a paper trail that has to hold up when somebody asks about a check six months later.</p>
+<div class="parts"><span>2 skills</span><span>3 tools</span><span>bundled templates</span></div>
+</a>
+
+<a class="scene" href="/skillup/scenarios/lesson-studio.html">
+<h3>The lesson studio</h3>
+<p>Four teachers, sixty students, weekly progress notes to parents. The notes are either three words or three paragraphs and there is no in between.</p>
+<div class="parts"><span>2 skills</span><span>1 tool</span><span>tone rules</span></div>
+</a>
+
+<a class="scene" href="/skillup/scenarios/counter-service.html">
+<h3>Counter service</h3>
+<p>The cafe side. Daily specials board, par-level checks, and a supplier reorder email that has to go out before 3pm or the delivery slips a week.</p>
+<div class="parts"><span>2 skills</span><span>2 tools</span><span>par levels</span></div>
+</a>
+
+</div>
+
+<h2>How to read these</h2>
+<p>Each scenario page has the same four sections, on purpose. By the third one you&#39;ll be reading the shape rather than the words, which is when the pattern starts transferring to your own work.</p>
+<div class="stack-rows">
+<div class="stack-row"><b>The job</b><p>What somebody at the shop actually has to get done, and how often.</p></div>
+<div class="stack-row"><b>What breaks</b><p>The specific failure without a skill. Usually inconsistency, not incapability.</p></div>
+<div class="stack-row"><b>The build</b><p>Which skills, which tools, which knowledge, and why each thing is the thing it is rather than one of the others.</p></div>
+<div class="stack-row"><b>What comes out</b><p>The actual output, so you can judge whether it was worth building.</p></div>
+</div>
+
+<div class="note">
+<p class="eyebrow">Want the files?</p>
+<p>Six of the skills referenced here are written out in full on the <a href="/skillup/samples/">samples pages</a>, annotated line by line, with a button to load each one into the <a href="/skillup/lab/forge.html">Skill Forge</a>.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/400-advanced/governance.html"><span class="eyebrow">Previous</span><span>Versioning and governance</span></a><a class="pagenav-item next" href="/skillup/scenarios/crate-to-shelf.html"><span class="eyebrow">Next</span><span>Crate to shelf</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

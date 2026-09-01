@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The portability matrix - SkillUp</title>
+<meta name="description" content="What actually carries between platforms, and what quietly gets dropped.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link is-active" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Level 300 / Shipping</p>
+      <h1>The portability matrix</h1>
+      <p class="lede">One table. Print it, screenshot it, whatever. This is the page you'll come back to.</p>
+      <h2>What carries</h2>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Copilot Studio</th>
+<th>Copilot in SharePoint</th>
+<th>GitHub Copilot / VS / VS Code</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>SKILL.md</code> markdown body</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>name</code> frontmatter</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>description</code> frontmatter</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Bundled supporting files</td>
+<td>yes, in a ZIP package</td>
+<td>limited, keep it simple</td>
+<td>yes, in the skill folder</td>
+</tr>
+<tr>
+<td><code>license</code> frontmatter</td>
+<td>ignored</td>
+<td>ignored</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><code>allowed-tools</code> frontmatter</td>
+<td>ignored</td>
+<td>ignored</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Can call external systems</td>
+<td>yes, through tools</td>
+<td>no</td>
+<td>yes, through the agent&#39;s tools</td>
+</tr>
+<tr>
+<td>Can run code</td>
+<td>through tools</td>
+<td>no</td>
+<td>yes, with <code>allowed-tools</code></td>
+</tr>
+<tr>
+<td>Authored in a UI</td>
+<td>yes, Build tab</td>
+<td>yes, conversationally</td>
+<td>no, it&#39;s a file</td>
+</tr>
+<tr>
+<td>Authored as a file</td>
+<td>yes, upload a ZIP</td>
+<td>yes, edit the .md directly</td>
+<td>yes, that&#39;s the only way</td>
+</tr>
+</tbody></table>
+</div>
+
+<h2>What that means when you move a skill</h2>
+<div class="stack-rows">
+<div class="stack-row"><b>Repo to Studio</b><p>Usually clean. Zip the skill folder, upload it in the Build tab. Drop <code>allowed-tools</code>, it does nothing there. Re-point any tool references at the agent's actual connectors.</p></div>
+<div class="stack-row"><b>Studio to SharePoint</b><p>The body carries. Anything that calls a tool does not. If your skill's steps assume an external lookup, that step has to become "ask the user" or the skill doesn't belong in SharePoint.</p></div>
+<div class="stack-row"><b>SharePoint to repo</b><p>Cleanest direction. Copy the .md out of the Agent Assets library into <code>.github/skills/&lt;name&gt;/SKILL.md</code> and you're done.</p></div>
+<div class="stack-row"><b>Anywhere to a non-Microsoft agent</b><p>The <code>SKILL.md</code> convention is shared beyond the Microsoft stack, which is why <code>.claude/skills/</code> is one of the recognized folders. Body and frontmatter carry. Everything platform-specific doesn't.</p></div>
+</div>
+
+<h2>Write for portability from the start</h2>
+<p>Four habits that cost nothing and save the rewrite:</p>
+<div class="grid grid-2">
+<div class="card">
+<h4>Only rely on name and description</h4>
+<p>Those two fields work everywhere. Everything else is a bonus you should be willing to lose.</p>
+</div>
+<div class="card">
+<h4>Name tools by what they do</h4>
+<p>"Look up the last three purchase prices" survives a platform move. "Call GetPriceHistoryV2" does not.</p>
+</div>
+<div class="card">
+<h4>Keep the body platform-neutral</h4>
+<p>No references to the Build tab, no SharePoint list names hardcoded in prose, no repo paths.</p>
+</div>
+<div class="card">
+<h4>Put platform specifics in a bundled file</h4>
+<p>If you genuinely need them, isolate them. Then porting is deleting one file, not rereading the body.</p>
+</div>
+</div>
+
+<div class="note warn">
+<p class="eyebrow">The honest caveat</p>
+<p>This matrix reflects how these products behave today. Skills are moving fast across the whole industry and field support in particular is the thing most likely to change. Check the docs for the platform you're shipping to before you bet a rollout on a row in this table.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/300-shipping/github-copilot.html"><span class="eyebrow">Previous</span><span>GitHub Copilot and VS Code</span></a><a class="pagenav-item next" href="/skillup/300-shipping/sharing.html"><span class="eyebrow">Next</span><span>Sharing and packaging</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

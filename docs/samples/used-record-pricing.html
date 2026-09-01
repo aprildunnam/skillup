@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>used-record-pricing - SkillUp</title>
+<meta name="description" content="A skill that orchestrates tools instead of duplicating them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link is-active" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Sample 02 / Skills plus tools</p>
+      <h1>used-record-pricing</h1>
+      <p class="lede">Read the body and notice how little vinyl knowledge is in it. It's a sequence of tool calls plus five rules that only exist at this shop.</p>
+      <div class="chips"><span class="chip">Copilot Studio</span><span class="chip">needs 2 tools</span><span class="chip">~35 lines</span></div>
+
+<p><button class="mini" data-load-skill="used-record-pricing">Open this in the Skill Forge</button></p>
+
+<h2>The file</h2>
+<pre><code class="language-markdown">---
+name: used-record-pricing
+description: Set a shelf price for a used record from a known condition grade and recent comps. Use when the grade is already established and someone asks what to price it at, what it&#39;s worth, or how to tag it.
+---
+
+# Used record pricing
+
+## When to use this
+The condition grade is already known. If it isn&#39;t, use
+vinyl-condition-grading first, then come back.
+
+## Steps
+1. Look up whether we&#39;ve carried this title before and what it sold for.
+   Use the sales history tool.
+2. Pull current market comps for this pressing at this grade.
+3. Check current stock. If we already have two or more copies, flag it
+   and price to move.
+4. Apply the shop&#39;s pricing rules below.
+5. Produce the price card.
+
+## The shop&#39;s pricing rules
+- Price to the disc grade, not the sleeve grade.
+- Never price above the median comp for the same grade.
+- Round to the nearest dollar, always ending in 0 or 5.
+- Anything over $60 goes behind the counter, not on the floor.
+- If a copy has sat longer than 90 days, price the new one 10% under
+  what that one is tagged at.
+
+## Output format
+**Price:** $XX
+**Basis:** [comp median, our history, or floor rule]
+**Placement:** floor / behind counter
+**Note:** [anything the tagger needs to know, or &quot;none&quot;]
+
+## If a tool fails
+Say which lookup failed and give a price range from what you do have.
+Do not present a single price you could not verify.
+</code></pre>
+<h2>What makes this work</h2>
+<h3>The chain is explicit</h3>
+<blockquote>
+<p>The condition grade is already known. If it isn&#39;t, use vinyl-condition-grading first, then come back.</p>
+</blockquote>
+<p>One line, three jobs: it scopes the skill, it stops the wrong skill firing, and it tells the agent what to do instead. This is how you keep two related skills from competing. <a href="/skillup/400-advanced/skill-sets.html">More on skill sets.</a></p>
+<h3>Tools are named by what they do</h3>
+<p>&quot;Use the sales history tool,&quot; not &quot;call <code>GetSalesHistoryV2</code>.&quot; That phrasing survives a platform migration, a connector rename, and a move from Copilot Studio to a repo. <a href="/skillup/400-advanced/skills-plus-tools.html">More on the pattern.</a></p>
+<h3>The business rules are in the skill, not the connector</h3>
+<p>Five rules, and every one of them is a fact about this shop rather than a fact about records:</p>
+<ul>
+<li>Price to the disc grade, not the sleeve grade</li>
+<li>Never above the median comp</li>
+<li>Round to 0 or 5</li>
+<li>Over $60 goes behind the counter</li>
+<li>90-day-stale copies set the ceiling for the new one</li>
+</ul>
+<p>Those change on the owner&#39;s whim. In a connector, that&#39;s a code change. In a skill, it&#39;s a text edit by the person who made the decision.</p>
+<h3>It says what to do when a tool fails</h3>
+<blockquote>
+<p>Say which lookup failed and give a price range from what you do have. Do not present a single price you could not verify.</p>
+</blockquote>
+<p>The single most skipped section in tool-driving skills, and the one that prevents the worst failure mode: a confident price built on a lookup that silently returned nothing.</p>
+<h3>The description names the boundary</h3>
+<blockquote>
+<p>Use when the grade is already established.</p>
+</blockquote>
+<p>Its sibling, <code>vinyl-condition-grading</code>, says &quot;use before pricing, when the grade isn&#39;t known yet.&quot; Each description names the other&#39;s territory. That&#39;s what disjoint scope looks like in practice.</p>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/samples/vinyl-condition-grading.html"><span class="eyebrow">Previous</span><span>vinyl-condition-grading</span></a><a class="pagenav-item next" href="/skillup/samples/open-mic-runsheet.html"><span class="eyebrow">Next</span><span>open-mic-runsheet</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+<script src="/skillup/assets/js/sample.js" defer></script>
+</body>
+</html>

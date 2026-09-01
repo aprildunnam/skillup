@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crate to shelf - SkillUp</title>
+<meta name="description" content="Grading, pricing, and listing a crate of used vinyl. Three skills, two tools, one knowledge source.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link is-active" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Scenario 01</p>
+      <h1>Crate to shelf</h1>
+      <p class="lede">A crate comes in Tuesday. By Thursday it's on the floor and online. Four people do this and it comes out four different ways.</p>
+      <h2>The job</h2>
+<p>Every Tuesday, Marcus opens a crate of maybe forty used records bought from an estate sale or a walk-in. Each one has to be:</p>
+<ol>
+<li>Graded, disc and sleeve separately, to Goldmine standards</li>
+<li>Priced against comps and the shop&#39;s own history</li>
+<li>Tagged and shelved, or held behind the counter if it&#39;s over $60</li>
+<li>Photographed and listed online if it&#39;s worth more than $25</li>
+</ol>
+<p>It takes most of a day. Three other people cover it when Marcus is off.</p>
+<h2>What breaks</h2>
+<p>Nothing is <em>impossible</em> without skills. Everything is inconsistent.</p>
+<div class="grid grid-2">
+<div class="card">
+<h4>Grades drift</h4>
+<p>One person grades generously, another conservatively. Two identical copies get tagged VG+ and NM in the same week.</p>
+</div>
+<div class="card">
+<h4>"Good" means good</h4>
+<p>Except in record grading, where Good is nearly the bottom. Every new person makes this mistake, and customers notice.</p>
+</div>
+<div class="card">
+<h4>Sleeve and disc get merged</h4>
+<p>One number for the whole record. Then somebody buys a clean disc in a split sleeve and is annoyed.</p>
+</div>
+<div class="card">
+<h4>Listings sound like a robot</h4>
+<p>Or like whoever wrote them that day. The online store reads as five different shops.</p>
+</div>
+</div>
+
+<h2>The build</h2>
+<div class="stack-rows">
+<div class="stack-row"><b>Skill</b><p><code>vinyl-condition-grading</code>. The Goldmine scale, disc and sleeve separately, what caps a grade, and an explicit "ask, don't guess." <a href="/skillup/samples/vinyl-condition-grading.html">Read the file.</a></p></div>
+<div class="stack-row"><b>Skill</b><p><code>used-record-pricing</code>. Takes a known grade, pulls comps and shop history, applies five house rules, produces a price card. <a href="/skillup/samples/used-record-pricing.html">Read the file.</a></p></div>
+<div class="stack-row"><b>Skill</b><p><code>listing-blurb</code>. Turns a grade and a price into 40 words for the online store, in the shop's voice, with the condition disclosed honestly.</p></div>
+<div class="stack-row"><b>Tool</b><p>Sales history lookup. What we've carried before and what it sold for.</p></div>
+<div class="stack-row"><b>Tool</b><p>Market comps connector. Current asking prices for this pressing at this grade.</p></div>
+<div class="stack-row"><b>Knowledge</b><p>The full Goldmine standard, as a knowledge source. Referenced for definitions, not for procedure.</p></div>
+</div>
+
+<h3>Why each thing is what it is</h3>
+<p><strong>Grading is a skill, not knowledge.</strong> The Goldmine standard itself is knowledge, a reference you look things up in. <em>How this shop applies it</em>, including the caps and the ask-don&#39;t-guess rule, is a procedure. Those are different things and they live in different places.</p>
+<p><strong>Pricing is a separate skill, not the same one.</strong> They&#39;re always used in sequence, which makes merging them tempting. Don&#39;t. Half the time somebody already knows the grade and just wants a price, and a merged skill would load the entire grading procedure to answer it.</p>
+<p><strong>The comps lookup is a tool, obviously.</strong> But note what stays in the skill: &quot;never price above the median comp for the same grade&quot; is a house rule, and house rules don&#39;t belong in a connector.</p>
+<p><strong>The chain is explicit.</strong> <code>used-record-pricing</code> says in its body: <em>if the grade isn&#39;t known, use vinyl-condition-grading first.</em> One line, and the two skills stop fighting.</p>
+<h2>What comes out</h2>
+<pre><code>&gt; tuesday crate, item 12. Steely Dan Aja, original 1977 ABC pressing.
+&gt; disc has light scuffs, no deep scratches. sleeve has ring wear both
+&gt; sides and a price sticker on the back.
+
+**Disc:** VG+ - light surface scuffs, no fingernail-catching scratches
+**Sleeve:** VG - ring wear on both faces, price sticker residue
+**Caps:** Sleeve capped at VG by ring wear. Disc could reach NM if it cleans up.
+
+&gt; price it
+
+**Price:** $25
+**Basis:** Comp median $28 for VG+ disc. Our last copy sold at $24 in March.
+**Placement:** floor
+**Note:** Sleeve grade is the weak side. Disclose ring wear in the listing.
+
+&gt; listing blurb
+
+Steely Dan, Aja. Original 1977 ABC pressing. Disc plays clean at VG+
+with light surface scuffs only. Sleeve is VG with ring wear on both
+faces and some sticker residue on the back. A very good copy of a
+record that&#39;s hard to find looking better than this.
+</code></pre>
+<p>Three skills, one conversation, and it comes out the same whether Marcus is in or not.</p>
+<div class="note brass">
+<p class="eyebrow">The transferable bit</p>
+<p>This is the most common shape in the whole set: <b>assess, decide, communicate</b>. Three skills chained, each one narrow, each one handing off explicitly. If your work has that shape, and a surprising amount of work does, this is your template.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/scenarios/"><span class="eyebrow">Previous</span><span>The showcase</span></a><a class="pagenav-item next" href="/skillup/scenarios/open-mic.html"><span class="eyebrow">Next</span><span>Open mic night</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>

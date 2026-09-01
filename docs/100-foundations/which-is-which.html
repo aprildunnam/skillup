@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skill, instruction, knowledge, or tool - SkillUp</title>
+<meta name="description" content="The comparison table people screenshot, plus the question that settles it in five seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/skillup/assets/css/site.css">
+<link rel="icon" href="/skillup/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/skillup/">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="16" cy="16" r="3" fill="currentColor"/><circle cx="16" cy="16" r="1" fill="var(--paper)"/></svg>
+    <span class="brand-name">SkillUp</span>
+  </a>
+  <div class="topbar-right">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+      <span class="theme-dot"></span><span class="theme-label">Theme</span>
+    </button>
+    <a class="topbar-link" href="https://github.com/aprildunnam/skillup">GitHub</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Course navigation"><div class="nav-group is-open"><a class="nav-group-head" href="/skillup/100-foundations/"><span class="nav-level">100</span><span>Foundations</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/100-foundations/">Skills in ninety seconds</a></li><li><a class="nav-link" href="/skillup/100-foundations/anatomy.html">Anatomy of a SKILL.md</a></li><li><a class="nav-link" href="/skillup/100-foundations/how-it-fires.html">How the agent decides to use it</a></li><li><a class="nav-link is-active" href="/skillup/100-foundations/which-is-which.html">Skill, instruction, knowledge, or tool</a></li><li><a class="nav-link" href="/skillup/100-foundations/where-they-live.html">Where skills live</a></li><li><a class="nav-link" href="/skillup/100-foundations/checkpoint.html">Checkpoint</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/200-authoring/"><span class="nav-level">200</span><span>Authoring</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/200-authoring/">The authoring mindset</a></li><li><a class="nav-link" href="/skillup/200-authoring/descriptions.html">The description is the whole ballgame</a></li><li><a class="nav-link" href="/skillup/200-authoring/naming.html">Naming rules that aren't optional</a></li><li><a class="nav-link" href="/skillup/200-authoring/body-structure.html">Body structure that works</a></li><li><a class="nav-link" href="/skillup/200-authoring/examples.html">Show, don't tell</a></li><li><a class="nav-link" href="/skillup/200-authoring/failure-modes.html">The five ways skills fail</a></li><li><a class="nav-link" href="/skillup/200-authoring/rewrites.html">Before and after</a></li><li><a class="nav-link" href="/skillup/200-authoring/testing.html">The tightening loop</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/300-shipping/"><span class="nav-level">300</span><span>Shipping</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/300-shipping/">One file, many shelves</a></li><li><a class="nav-link" href="/skillup/300-shipping/copilot-studio.html">Copilot Studio</a></li><li><a class="nav-link" href="/skillup/300-shipping/m365.html">M365 Copilot and SharePoint</a></li><li><a class="nav-link" href="/skillup/300-shipping/github-copilot.html">GitHub Copilot and VS Code</a></li><li><a class="nav-link" href="/skillup/300-shipping/portability.html">The portability matrix</a></li><li><a class="nav-link" href="/skillup/300-shipping/sharing.html">Sharing and packaging</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/400-advanced/"><span class="nav-level">400</span><span>Advanced</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/400-advanced/">What changes at scale</a></li><li><a class="nav-link" href="/skillup/400-advanced/tokens.html">The token economy</a></li><li><a class="nav-link" href="/skillup/400-advanced/skills-plus-tools.html">Skills that drive tools</a></li><li><a class="nav-link" href="/skillup/400-advanced/bundles.html">Bundled assets</a></li><li><a class="nav-link" href="/skillup/400-advanced/skill-sets.html">Designing a skill set</a></li><li><a class="nav-link" href="/skillup/400-advanced/evals.html">Evaluating skills</a></li><li><a class="nav-link" href="/skillup/400-advanced/governance.html">Versioning and governance</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/scenarios/"><span>Scenarios</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/scenarios/">The showcase</a></li><li><a class="nav-link" href="/skillup/scenarios/crate-to-shelf.html">Crate to shelf</a></li><li><a class="nav-link" href="/skillup/scenarios/open-mic.html">Open mic night</a></li><li><a class="nav-link" href="/skillup/scenarios/consignment.html">Consignment intake</a></li><li><a class="nav-link" href="/skillup/scenarios/lesson-studio.html">The lesson studio</a></li><li><a class="nav-link" href="/skillup/scenarios/counter-service.html">Counter service</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/samples/"><span>Samples</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/samples/">Six annotated skills</a></li><li><a class="nav-link" href="/skillup/samples/vinyl-condition-grading.html">vinyl-condition-grading</a></li><li><a class="nav-link" href="/skillup/samples/used-record-pricing.html">used-record-pricing</a></li><li><a class="nav-link" href="/skillup/samples/open-mic-runsheet.html">open-mic-runsheet</a></li><li><a class="nav-link" href="/skillup/samples/consignment-intake.html">consignment-intake</a></li><li><a class="nav-link" href="/skillup/samples/lesson-recap-note.html">lesson-recap-note</a></li><li><a class="nav-link" href="/skillup/samples/shop-site-review.html">shop-site-review</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/lab/"><span>Lab</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/lab/">The lab</a></li><li><a class="nav-link" href="/skillup/lab/forge.html">Skill Forge</a></li><li><a class="nav-link" href="/skillup/lab/decide.html">Should this be a skill?</a></li><li><a class="nav-link" href="/skillup/lab/ideas.html">Skill idea generator</a></li></ul></div><div class="nav-group"><a class="nav-group-head" href="/skillup/resources/"><span>Resources</span></a><ul class="nav-list"><li><a class="nav-link" href="/skillup/resources/">Resources</a></li></ul></div></nav>
+  </aside>
+
+  <main id="main">
+    <article class="page">
+      <p class="eyebrow page-eyebrow">Level 100 / Foundations</p>
+      <h1>Skill, instruction, knowledge, or tool</h1>
+      <p class="lede">Four things sound similar and do completely different jobs. Getting this wrong is the most common reason a skill doesn't work.</p>
+      <h2>The table</h2>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>What it is</th>
+<th>When it applies</th>
+<th>Where it&#39;s managed</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Instructions</strong></td>
+<td>The agent&#39;s general behavior and personality</td>
+<td>Always, every turn</td>
+<td>Agent identity or configuration</td>
+</tr>
+<tr>
+<td><strong>Knowledge</strong></td>
+<td>Data the agent can search and reference</td>
+<td>Whenever the agent needs a fact</td>
+<td>Knowledge sources, files, sites, indexes</td>
+</tr>
+<tr>
+<td><strong>Tools</strong></td>
+<td>Actions taken against external systems</td>
+<td>When an action is required</td>
+<td>Connectors, APIs, MCP servers</td>
+</tr>
+<tr>
+<td><strong>Skills</strong></td>
+<td>Reusable, task-specific procedures</td>
+<td>Only when the task comes up</td>
+<td>Markdown files or packages</td>
+</tr>
+</tbody></table>
+</div>
+
+<h2>The five second version</h2>
+<p>Ask yourself one question: <strong>does this apply always, sometimes, or only when I go get it?</strong></p>
+<div class="grid grid-2">
+<div class="card">
+<h4>Always</h4>
+<p>That's instructions. "Be concise. Never quote a price without a date. Sign off as the Cafe, not as an AI."</p>
+</div>
+<div class="card">
+<h4>Sometimes, and it's a procedure</h4>
+<p>That's a skill. "Here's how we grade vinyl." Nobody needs that during a conversation about the espresso machine.</p>
+</div>
+<div class="card">
+<h4>Sometimes, and it's a fact</h4>
+<p>That's knowledge. The Goldmine grading standard itself, the supplier price list, last year's open mic schedule.</p>
+</div>
+<div class="card">
+<h4>It has to touch something outside</h4>
+<p>That's a tool. Reading the inventory database, sending the email, writing a row to the list.</p>
+</div>
+</div>
+
+<h2>Worked examples from the shop</h2>
+<div class="table-scroll">
+
+<table>
+<thead>
+<tr>
+<th>What somebody wants</th>
+<th>Answer</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&quot;Always write in the shop&#39;s voice, never corporate&quot;</td>
+<td>Instructions</td>
+<td>Applies to every response, not to one task</td>
+</tr>
+<tr>
+<td>&quot;How we grade used vinyl&quot;</td>
+<td>Skill</td>
+<td>A procedure, needed only sometimes</td>
+</tr>
+<tr>
+<td>&quot;The full Goldmine grading standard document&quot;</td>
+<td>Knowledge</td>
+<td>It&#39;s a reference to look things up in</td>
+</tr>
+<tr>
+<td>&quot;Check what we paid for this title last time&quot;</td>
+<td>Tool</td>
+<td>Requires reading the inventory system</td>
+</tr>
+<tr>
+<td>&quot;How we run the Thursday open mic, start to finish&quot;</td>
+<td>Skill</td>
+<td>A multi-step procedure with a house format</td>
+</tr>
+<tr>
+<td>&quot;The current lesson rate card&quot;</td>
+<td>Knowledge</td>
+<td>A fact that changes independently of any procedure</td>
+</tr>
+<tr>
+<td>&quot;Post the promo to Instagram&quot;</td>
+<td>Tool</td>
+<td>An action against an external system</td>
+</tr>
+<tr>
+<td>&quot;How we write a promo post, and what never goes in one&quot;</td>
+<td>Skill</td>
+<td>The procedure around the tool, not the tool</td>
+</tr>
+</tbody></table>
+</div>
+
+<p>Notice the last two. That pair comes up constantly. <strong>The tool does the thing. The skill knows how your shop does the thing.</strong> They work together, and neither replaces the other.</p>
+<div class="note brass">
+<p class="eyebrow">The pattern worth remembering</p>
+<p>A good skill often does nothing but tell the agent how to use tools it already has, in what order, with what house rules. That's not a lesser kind of skill. That's the best kind. There's a whole page on it in <a href="/skillup/400-advanced/skills-plus-tools.html">Level 400</a>.</p>
+</div>
+
+<h2>Two more that trip people up</h2>
+<p><strong>An agent, not a skill.</strong> If the audience is different, the permissions are different, or you&#39;d want it to have its own name and its own front door, that&#39;s a separate agent. A skill lives inside an agent.</p>
+<p><strong>A prompt, not a skill.</strong> If you&#39;re going to do it once, type it. Skills are for the thing you do every Tuesday.</p>
+<div class="note">
+<p class="eyebrow">Try it</p>
+<p>The <a href="/skillup/lab/decide.html">Should this be a skill?</a> tool in the lab walks these questions one at a time and tells you which of the six answers you landed on, and why.</p>
+</div>
+
+      <nav class="pagenav"><a class="pagenav-item prev" href="/skillup/100-foundations/how-it-fires.html"><span class="eyebrow">Previous</span><span>How the agent decides to use it</span></a><a class="pagenav-item next" href="/skillup/100-foundations/where-they-live.html"><span class="eyebrow">Next</span><span>Where skills live</span></a></nav>
+    </article>
+    <footer class="foot">
+      <p>SkillUp is a teaching site. Every example runs on <a href="/skillup/scenarios/">April's Acoustic Cafe</a>, a record shop that doesn't exist.</p>
+      <p><a href="https://github.com/aprildunnam/skillup">Source on GitHub</a> &middot; MIT licensed &middot; 2026</p>
+    </footer>
+  </main>
+</div>
+
+<script src="/skillup/assets/js/site.js" defer></script>
+
+</body>
+</html>
